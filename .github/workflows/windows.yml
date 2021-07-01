@@ -1,0 +1,14 @@
+name: Python Commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: windows-latest
+    needs: ["run-shell-command"]
+    steps:
+      - name: Directory Powershell
+        run: Get-location
+      - name: Directory bash
+        run: pwd
+        shell: bash
