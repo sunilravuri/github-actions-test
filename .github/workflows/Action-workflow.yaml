@@ -1,11 +1,7 @@
 name: Actions-workflow
 
 on: 
- issues:
-    types: [opened, closed]
-
-   
- pull_request:
+  pull_request:
     types: [closed, unassigned, opened, reopened]
 
 jobs:
