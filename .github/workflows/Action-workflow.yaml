@@ -1,7 +1,12 @@
 name: Actions-workflow
 
 on: 
-  pull_request:
+ issues:
+    types: [opened, closed]
+ schedule:
+   - cron:  '*/5 * * * *'
+   
+ pull_request:
     types: [closed, unassigned, opened, reopened]
 
 jobs:
