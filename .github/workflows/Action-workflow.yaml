@@ -1,13 +1,8 @@
 name: Actions-workflow
 
 on: 
- issues:
-    types: [opened, closed]
- schedule:
-   - cron:  "*/5 * * * *"
-   
- pull_request:
-    types: [closed, reassigned, opened, reopened]
+  pull_request:
+    types: [closed, unassigned, opened, reopened]
 
 jobs:
   run-github-actions:
