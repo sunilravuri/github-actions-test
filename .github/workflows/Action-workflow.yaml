@@ -6,7 +6,7 @@ on:
 
    
  pull_request:
-    types: [closed, reassigned, opened, reopened]
+    types: [closed, unassigned, opened, reopened]
 
 jobs:
   run-github-actions:
